@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);}
+h1{
+margin-left:30%;
+margin-top:15%;}
+</style>
+<script>
+function validation()
+{
+	var a=document.getElementById("one").value;
+	var b=document.getElementById("two").value;
+	var c=document.getElementById("three").value;
+	if(a==""||b==""||c=="")
+	{
+		alert("enter all required details");
+	}
+	else if(b!=c)
+	{
+		alert("enter same password");
+	}
+	else
+		window.location.href="https://themeforest.net/";
+}
+</script>
+</head>
+<body background="https://www.wallpapermaiden.com/wallpaper/37511/download/1920x1080/retrowave-landscape-moon-stars-surface-planet-landscape.jpeg">
+<h1><font face="Script" size="20" color="red">USHA  FOR KUSHI</font></h1>
+<table cellpadding="50">
+<tr><td><font color="red"> USER NAME:</font></td><td><input id="one" type="text" placeholder="john"></input></td></tr>
+<tr><td><font color="red"> ENTER PASSWORD:</font></td><td><input id="two" type="password" placeholder="............"</input></tr>
+<tr><td><font color="red"> CONFIRM PASSWORD:</font></td><td><input id="three" type="password" placeholder="............"</input></tr>
+<tr><td><button onclick="validation()" id="but">SIGN IN</button></td></tr>
+</table>
+</body>
+</html>
+ 
